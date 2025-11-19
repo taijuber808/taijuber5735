@@ -1,0 +1,1047 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            height: 350vh;
+            width: 100%;
+            border: 1px solid black;
+            background-color: rgba(250, 235, 215, 0.213);
+            
+        }
+
+        .box1 {
+            height: 20px;
+            width: 100%;
+            border: 1px solid red;
+            border: none;
+            background-color: rgba(128, 128, 128, 0.273);
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .logo {
+            height: 100px;
+            width: 100%;
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .logo1 {
+
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            font-size: 50px;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .logo2 {
+
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            font-size: 20px;
+            gap: 20px;
+            align-items: center;
+        }
+
+        header ul {
+            height: 30px;
+            width: 100%;
+            display: flex;
+            
+            gap: 50px;
+            list-style: none;
+            align-items: center;
+        }
+
+        header li:hover {
+            transition: scale(2s);
+            background-color: rgb(25, 249, 32);
+            border-radius: 5px;
+            height: 30px;
+            width: auto;
+            cursor: pointer;
+        }
+
+        .bgimg {
+            height: 700px;
+            width: 100%;
+            border: 1px solid gray;
+          
+
+        }
+
+        .bgimg {
+            background-image: url(https://transvelo.github.io/freshcart/assets/images/slide-1.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+        }
+
+        .imgtext {
+            height: 500px;
+            margin-top: 5%;
+            width: 550px;
+            line-height: 30px;
+            padding-top: 5%;
+            padding-left: 1%;
+        }
+
+        .imgtext h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            color: black;
+        }
+
+        .imgtext h2 {
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(62, 243, 7);
+        }
+
+        .imgtext p {
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(5, 6, 5);
+        }
+
+        .box2 {
+            height: 300px;
+            width: 100%;
+            border: 1px solid black;
+            display: flex;
+
+            align-items: center;
+            border: none;
+            gap: 50px;
+            background-color: white;
+        }
+
+        .im {
+            height: 180px;
+            width: 150px;
+            border: 1px solid rgba(0, 0, 0, 0.154);
+            border-radius: 7px;
+            margin-left: 20px;
+
+
+        }
+
+        .box2 :hover {
+            transform: scale(1);
+            border-radius: 10px;
+            border: 1px solid green;
+            cursor: pointer;
+
+        }
+
+        .im p {
+            color: gray;
+            font-family: Arial, Helvetica, sans-serif;
+            padding-left: 20px;
+
+        }
+
+        .sec1 {
+            height: 300px;
+            width: 100%;
+            display: flex;
+            gap: 20px;
+
+        }
+
+        .sec2 {
+            height: 100%;
+            width: 50%;
+            line-height: 30px;
+            background-image: url(https://static.vecteezy.com/system/resources/previews/053/700/501/non_2x/nutrition-product-background-with-fruits-vegetables-chocolates-chips-cookies-minimalistic-style-picture-photo.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+        }
+
+        .sec3 {
+            height: 100%;
+            width: 50%;
+            line-height: 30px;
+            background-image: url(https://media.istockphoto.com/id/153014650/photo/baked-foods.jpg?s=612x612&w=0&k=20&c=N-uKtHbOVq9AS_Rq0mXw5eEaqtJ_U612vQS3dmQz0WU=);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+
+        }
+          .products {
+      display: flex;
+      justify-content: space-around;
+      
+    }
+
+    .card {
+      width: 200px;
+      margin: 10px;
+      background: white;
+      padding: 10px;
+      border: 1px solid white;
+      border-radius: 5px;
+      border: 1px solid black;
+    }
+
+    .card img {
+      width: 100%;
+      height: 120px;
+    }
+
+    .card h4 {
+      font-size: 14px;
+      margin: 8px 0 4px;
+    }
+
+    .category {
+      font-size: 12px;
+      color: gray;
+    }
+
+    .rating {
+      font-size: 12px;
+      color: orange;
+      margin: 4px 0;
+    }
+
+    .price-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 5px;
+    }
+
+    .price {
+      font-size: 14px;
+    }
+
+    .old-price {
+      color: gray;
+      margin-right: 5px;
+    }
+
+    .new-price {
+      color: green;
+      font-weight: bold;
+    }
+
+    .add-btn {
+      background: green;
+      color: white;
+      border: none;
+      padding: 5px 8px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 12px;
+    }
+
+    .add-btn:hover {
+      background: darkgreen;
+    }
+
+ 
+
+.section-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color:gray;
+}
+
+.product-grid-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr; 
+    gap: 15px;
+}
+
+.product-banner {
+    color: white;
+    border-radius: 8px;
+    position: relative;
+    background-image: url(https://cdn.shopify.com/s/files/1/1003/7044/files/fresh_roasted_coffee_fresh_coffee_fresh_ground_coffee_best_ground_coffee_large.jpg?v=1566387773);
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 400px;
+    padding-top: 20px; 
+    
+}
+
+.product-banner h3 {
+    font-size: 28px;
+    color: white;
+    margin-top: 10px;
+}
+
+.product-banner p {
+    font-size: 16px;
+    color: white;
+    padding-top: 20px;
+}
+
+.shop-now-btn {
+    background-color: green; 
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    margin-top: 20px;
+    
+    cursor: pointer;
+    font-weight: bold;
+    align-self: flex-start;
+    margin-bottom: 10px;
+    z-index: 2; 
+}
+
+.coffee-grains-image {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+.product-card {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    border: 1px solid white;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+}
+
+.product-image-placeholder {
+    height: 150px;
+    background-color:whitesmoke;
+    margin-bottom: 10px;
+    border-radius: 6px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: gray;
+    font-size: 12px;
+}
+
+.product-category {
+    font-size: 12px;
+    color: gray;
+    margin: 5px 0;
+}
+
+.product-name {
+    font-size: 16px;
+    font-weight: bold;
+    color: gray;
+    margin: 5px 0;
+}
+
+.product-rating {
+    font-size: 14px;
+    color: orange;
+    margin-bottom: 10px;
+}
+
+.rating-value {
+    color: gray;
+    margin-left: 5px;
+}
+
+.product-price {
+    font-size: 18px;
+    font-weight: bold;
+    color: green; 
+    margin: 5px 0 15px 0;
+}
+
+.add-to-cart-btn {
+    background-color: green; 
+    color: white;
+    border: none;
+    padding: 10px 0;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.countdown {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+}
+
+.countdown-item {
+    text-align: center;
+    line-height: 1;
+}
+
+.countdown-item strong {
+    display: block;
+    font-size: 18px;
+    color: black;
+}
+
+.countdown-item span {
+    font-size: 10px;
+    color: gray;
+}
+
+.features-section {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.feature-card {
+    flex: 1;
+    text-align: left;
+    padding: 15px;
+    background-color:white;
+    border-radius: 8px;
+    border: 1px solid white;
+}
+
+.feature-icon {
+    font-size: 30px;
+    display: inline-block;
+    color: green; 
+    margin-bottom: 10px;
+}
+
+.feature-card h5 {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 0 5px 0;
+    color: gray;
+}
+
+.feature-card p {
+    font-size: 14px;
+    color: gray;
+    line-height: 1;
+}
+
+
+.site-footer {
+    background-color:whitesmoke; 
+    padding: 30px 50px;
+    color: gray;
+    font-size: 14px;
+}
+
+
+.footer-content {
+    display: flex;
+    justify-content: space-between; 
+    padding-bottom: 30px;
+   
+    flex-wrap: wrap; 
+}
+
+.footer-column {
+    
+  width: 150px; 
+    margin: 10px 0; 
+}
+
+.column-title {
+    font-size: 14px;
+    font-weight: bold;
+    color:gray;
+    margin-bottom: 15px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column li {
+    margin-bottom: 8px;
+}
+footer{
+  background-color: rgba(128, 128, 128, 0.506);
+  padding: 10px 20px;
+  margin-top: 1%;
+}
+
+.footer-column a {
+    text-decoration: none;
+    color:gray;
+}
+
+.footer-column a:hover {
+    color:black; 
+}
+
+.separator {
+    border: 0;
+    border-top: 1px solid whitesmoke;
+    margin: 20px 0;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    flex-wrap: wrap;
+}
+
+.payment-partners {
+    display: flex;
+    align-items: center;
+    min-width: 300px; 
+}
+
+.payment-partners p {
+    font-weight: 500;
+    margin-right: 15px;
+    color: gray;
+}
+
+.logo-placeholder {
+    font-size: 20px;
+}
+
+.app-downloads {
+    display: flex;
+    align-items: center;
+}
+
+.app-downloads p {
+    font-weight: 500;
+    margin-right: 15px;
+    color: gray;
+}
+
+.app-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.app-store-button, .google-play-button {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.app-store-button {
+    background-color: black; 
+}
+
+.google-play-button {
+    background-color: green; 
+}
+
+.app-icon {
+    font-size: 16px;
+    margin-right: 5px;
+}
+
+.footer-copyright {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+    border-top: 1px solid whitesmoke;
+    font-size: 12px;
+    color:gray;
+    flex-wrap: wrap; 
+}
+
+.footer-copyright p {
+    margin: 5px 0;
+}
+
+.footer-copyright a {
+    color:gray;
+    text-decoration: none;
+}
+
+.social-media {
+    display: flex;
+    align-items: center;
+}
+
+.social-media p {
+    margin-right: 10px;
+}
+
+.social-icon {
+    font-size: 16px;
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+
+   
+   
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <div class="box1">
+                <p>super valua Details-Save move with coupons</p><select name="text" id="">
+                    <option value="text">₳ English</option>
+                    <option value="text">Hindi</option>
+                    <option value="text">Gujarati</option>
+                </select>
+            </div>
+            <div class="logo">
+                <div class="logo1"><i style="color: rgb(47, 255, 54);" class="fa-solid fa-cart-shopping"></i>FreshCart
+                    <input type="text" style="width: 100%;height: 30%;border-radius: 7px;"
+                        placeholder="Search for products "><input style="width: 30%;height: 30px;border-radius: 3px;"
+                        type="Location" placeholder="Location">
+                </div>
+                <div class="logo2"><i class="fa-solid fa-heart"></i><i class="fa-solid fa-user"></i><i
+                        class="fa-solid fa-inbox"></i></div>
+            </div>
+        </nav>
+        <header>
+            <div class="menu1">
+                <ul>
+                    <li>All Deepartments</li>
+                    <li>Home ‸</li>
+                    <li>Shops ‸</li>
+                    <li>Stores ‸</li>
+                    <li>Mega menu ‸</li>
+                    <li>Pages <select name="text" id="">
+                            <option value="text">Blog</option>
+                            <option value="text">Blog Single</option>
+                            <option value="text">Blog Category</option>
+                            <option value="text">About us</option>
+                            <option value="text">404 Error</option>
+                            <option value="text">Contact</option>
+                        </select></li>
+                    <li>Account ‸</li>
+                    <li>Dashboard</li>
+                    <li>Docs</li>
+
+                </ul>
+            </div>
+        </header>
+        <hr>
+        <div class="bgimg">
+            <div class="imgtext">
+                <div
+                    style="font-weight:bold ;width: 250px ;margin-top: 8%;   border-radius: 10px; background-color: yellow;">
+                    <p>Free Shoping-orders over $100</p>
+                </div>
+                <h1>Free Shipping on orders over </h1>
+                <h2>$100</h2>
+                <p>Free Shipping to First-Time Customers Only,After Promotions and discounts are appied. </p><button
+                    style="height: 30px;width: 100px;background-color: black;color: white;border-radius: 7px;">Shop Now
+                    →</button>
+            </div>
+
+        </div>
+
+        <h2 style="font-family: Arial, Helvetica, sans-serif;word-spacing: 3px;padding-top: 1%;">Featured Categories
+        </h2>
+
+        <section>
+            <div class="box2">
+                <div class="im"><img height="100%" width="100%"
+                        src="https://5.imimg.com/data5/SELLER/Default/2022/11/RY/FS/WV/2388732/huggies-new-born-baby-diaper-250x250.JPG"
+                        alt="">Baby care Huggies</div>
+                <div class="im"><img height="100%" width="100%"
+                        src="https://godavaricuts.com/cdn/shop/products/Godavari-Cuts-Day-1-_51-of-65.jpg?v=1682164565"
+                        alt="">Chicken Meat</div>
+                <div class="im"><img height="100%" width="100%"
+                        src="https://instamart-media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,h_600/6d147ef7fd3246a3a5cd6b87aa89c071"
+                        alt="">Cleaning Essentials</div>
+                <div class="im"><img height="100%" width="100%"
+                        src="https://aller-petfood.com/wp-content/uploads/2017/09/ALL_CAT.jpg" alt="">Pet Care</div>
+                <div class="im"><img height="100%" width="100%"
+                        src="https://assets.oyegifts.com/flowers-n-gifts/vendordata/product/refreshing-three-kg-fruits-basket.jpg"
+                        alt="">Fruite & Vegetables</div>
+                <div class="im"><img height="100%" width="100%"
+                        src="https://daily.myindianbrand.com/wp-content/uploads/2023/03/maaza-mango-drink-250ml--300x300.webp"
+                        alt="">Maaza 250ml</div>
+                <div class="im"><img height="100%" width="100%"
+                        src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/2b738d169830451.64537b2f976e1.png"
+                        alt="">Bakery & Biscuits</div>
+                <div class="im"><img height="100%" width="100%"
+                        src="https://www.fortunefoods.com/wp-content/uploads/2022/12/1-1.png" alt="">Atta & Maida</div>
+
+
+            </div>
+            <div class="sec1">
+                <div class="sec2">
+                    <h1 style="color: rgb(251, 97, 148);margin-top: 7%;">Fruits & Vegetables</h1>
+                    <p style="color: rgb(251, 97, 148);">Get Upto 30% Off
+
+                    </p><button
+                        style="height: 30px;width: 100px;background-color: black;color: white;border-radius: 7px;">Shop
+                        Now
+                        →</button>
+                </div>
+                <div class="sec3">
+                    <h1 style="margin-top: 7%;color: white;">Freshly Baked Buns</h1>
+                    <p style="color: white;">Get Upto 25% Off
+
+                    </p>
+                    <button
+                        style="height: 30px;width: 100px;background-color: black;color: white;border-radius: 7px;">Shop
+                        Now
+                        →</button>
+                </div>
+            </div>
+        </section>
+<h1 style="font-family: Arial, Helvetica, sans-serif;margin-top: 1%;">Popular Products</h1>
+        <section >
+          
+            
+             <div class="products">
+      <div class="card">
+        <img
+          src="https://thvnext.bing.com/th/id/OIP.Ujrti2Ip7CjKCmLtVU8PFgHaHa?o=7&cb=ucfimgc2rm=3&rs=1&pid=ImgDetMain&o=7&rm=3"
+          alt="Product" />
+        <p class="category">Snacks & Munchies</p>
+        <h4>Haldiram’s Sev Bhujia</h4>
+        <p class="rating">⭐ 4.3 (4)</p>
+        <div class="price-row">
+          <p class="price">
+            <span class="old-price">$24</span>
+            <span class="new-price">$21.6</span>
+          </p>
+          <button class="add-btn">+ Add</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://m.media-amazon.com/images/I/613LHX-SSZL.SL1500.jpg" alt="Product" />
+        <p class="category">Bakery & Biscuits</p>
+        <h4>NutriChoice Digestive</h4>
+        <p class="rating">⭐ 4.3 (4)</p>
+        <div class="price-row">
+          <p class="price">
+            <span class="old-price">$28</span>
+            <span class="new-price">$24</span>
+          </p>
+          <button class="add-btn">+ Add</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://m.media-amazon.com/images/I/618fySthK8L.SL1500.jpg" alt="Product" />
+        <p class="category">Bakery & Biscuits</p>
+        <h4>Cadbury 5 Star Chocolate</h4>
+        <p class="rating">⭐ 4.3 (4)</p>
+        <div class="price-row">
+          <p class="price">
+            <span class="old-price">$40</span>
+            <span class="new-price">$35</span>
+          </p>
+          <button class="add-btn">+ Add</button>
+        </div>
+      </div>
+       <div class="card">
+        <img src="https://img1.exportersindia.com/product_images/bc-small/2022/9/4086961/amul-milk-powder-1664438107-6563025.jpeg" alt="Product" />
+        <p class="category">Dairy,Bread & Eggs</p>
+        <h4>Amul Dahi -400g</h4>
+        <p class="rating">⭐ 4.3 (4)</p>
+        <div class="price-row">
+          <p class="price">
+            <span class="old-price">$40</span>
+            <span class="new-price">$35</span>
+          </p>
+          <button class="add-btn">+ Add</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img
+          src="https://thvnext.bing.com/th/id/OIP.gYO4R0gA3Wzj-_vo1HvbkwHaHa?o=7&cb=ucfimgc2rm=3&rs=1&pid=ImgDetMain&o=7&rm=3"
+          alt="Product" />
+        <p class="category">Snacks & Munchies</p>
+        <h4>Onion Flavour Potato</h4>
+        <p class="rating">⭐ 4.3 (4)</p>
+        <div class="price-row">
+          <p class="price">
+            <span class="old-price">$5</span>
+            <span class="new-price">$3</span>
+          </p>
+          <button class="add-btn">+ Add</button>
+        </div>
+      </div>
+    </div>
+    
+    <div class="products">
+      <div class="card">
+        <img src="https://www.bbassets.com/media/uploads/p/l/40097849_5-act-ii-instant-popcorn-simply-salted.jpg" alt="">
+        <p class="category">Instant Food</p>
+        <h4>Salted Instant Popcorn</h4>
+        <p class="rating">⭐ 4.3 (4)</p>
+        <div class="price-row">
+          <p class="price">
+            <span class="old-price">$18</span>
+            <span class="new-price">$11.7</span>
+          </p>
+          <button class="add-btn">+ Add</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://foreverbaby.in/wp-content/uploads/2023/07/76.jpg" alt="">
+        <p class="category">Snack & Munchines</p>
+        <h4>Slurrp Millet Chocolate</h4>
+        <p class="rating">⭐ 4.3 (4)</p>
+        <div class="price-row">
+          <p class="price">
+            <span class="old-price">$8</span>
+            <span class="new-price">$5</span>
+          </p>
+          <button class="add-btn">+ Add</button>
+        </div>
+      </div>
+       <div class="card">
+        <img src="https://m.media-amazon.com/images/I/71ZufuSGmVL._UF1000,1000_QL80_.jpg" alt="">
+        <p class="category">Bakery & Biscuits</p>
+        <h4>Cadbury 5 star Chocolate</h4>
+        <p class="rating">⭐ 4.3 (4)</p>
+        <div class="price-row">
+          <p class="price">
+            <span class="old-price">$38</span>
+            <span class="new-price">$35</span>
+          </p>
+          <button class="add-btn">+ Add</button>
+        </div>
+      </div>
+
+      <div class="card">
+       <img src="https://www.bbassets.com/media/uploads/p/xxl/40341108_1-gianis-biscotti-bliss-ice-cream.jpg" alt="">
+        <p class="category">Bakery & Biscuits</p>
+        <h4>Cadbury 5 Star Chocolate</h4>
+        <p class="rating">⭐ 4.3 (4)</p>
+        <div class="price-row">
+          <p class="price">
+            <span class="old-price">$40</span>
+            <span class="new-price">$35</span>
+          </p>
+          <button class="add-btn">+ Add</button>
+        </div>
+      </div>
+
+      <div class="card">
+      <img src="https://5.imimg.com/data5/SELLER/Default/2021/1/RY/OQ/WH/118764700/amul-masti-dahi-500x500.jpg" alt="">
+        <p class="category">Dairy, Bread & eggs</p>
+        <h4>Amul Dahi</h4>
+        <p class="rating">⭐ 4.3 (4)</p>
+        <div class="price-row">
+          <p class="price">
+            <span class="old-price">$70</span>
+            <span class="new-price">$65</span>
+          </p>
+          <button class="add-btn">+ Add</button>
+        </div>
+        
+      </div>
+      </div>
+        </section>
+        <h1 style="font-family: Arial, Helvetica, sans-serif;margin-top: 1%;">Daily Best Sells</h1>
+
+          <div class="daily-best-sells">
+        <div class="product-grid-container">
+            <div class="product-banner">
+                <h3>100% Organic Coffee Beans</h3>
+                <p>Get the best deal before close.</p>
+                <button class="shop-now-btn">Shop Now →</button>
+                <div class="coffee-grains-image"></div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image-placeholder"><img height="100%" width="100%"   src="./tea image.webp" alt=""></div>
+                <p class="product-category">Tea, Coffee & Drinks</p>
+                <h4 class="product-name">Roast Ground Coffee</h4>
+                <div class="product-rating">
+                    ⭐⭐⭐⭐⭐ <span class="rating-value">4.3</span>
+                </div>
+                <p class="product-price">$13.5 - $18</p>
+                <button class="add-to-cart-btn">+ Add to cart</button>
+                <div class="countdown">
+                    <div class="countdown-item"><strong>11</strong><span>Days</span></div>
+                    <div class="countdown-item"><strong>09</strong><span>Hours</span></div>
+                    <div class="countdown-item"><strong>07</strong><span>Mins</span></div>
+                    <div class="countdown-item"><strong>50</strong><span>Sec</span></div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image-placeholder"><img width="100%"  src="https://5.imimg.com/data5/SELLER/Default/2024/1/373474851/YO/TV/AT/6677072/royal-grove-tomato-crushed-500x500.png" alt=""></div>
+                <p class="product-category">Fruits & Vegetables</p>
+                <h4 class="product-name">Crushed Tomatoes</h4>
+                <div class="product-rating">
+                    ⭐⭐⭐⭐⭐ <span class="rating-value">4.3</span>
+                </div>
+                <p class="product-price">$13.5 - $18</p>
+                <button class="add-to-cart-btn">+ Add to cart</button>
+                <div class="countdown">
+                    <div class="countdown-item"><strong>11</strong><span>Days</span></div>
+                    <div class="countdown-item"><strong>09</strong><span>Hours</span></div>
+                    <div class="countdown-item"><strong>07</strong><span>Mins</span></div>
+                    <div class="countdown-item"><strong>50</strong><span>Sec</span></div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image-placeholder"><img width="100%" height="100%"   src="https://5.imimg.com/data5/SELLER/Default/2023/10/350396328/YZ/EO/YC/96587505/golden-crown-pineapple-slice-850g.jpeg" alt=""></div>
+                <p class="product-category">Fruits & Vegetables</p>
+                <h4 class="product-name">Golden Pineapple</h4>
+                <div class="product-rating">
+                    ⭐⭐⭐⭐⭐ <span class="rating-value">4.3</span>
+                </div>
+                <p class="product-price">$14.4 - $18</p>
+                <button class="add-to-cart-btn">+ Add to cart</button>
+                <div class="countdown">
+                    <div class="countdown-item"><strong>11</strong><span>Days</span></div>
+                    <div class="countdown-item"><strong>09</strong><span>Hours</span></div>
+                    <div class="countdown-item"><strong>07</strong><span>Mins</span></div>
+                    <div class="countdown-item"><strong>50</strong><span>Sec</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="features-section">
+        <div class="feature-card">
+            <span class="feature-icon">🕒</span>
+            <h5>10 minute grocery now</h5>
+            <p>Get your order delivered to your doorstep at the earliest from FreshCart pickup stores near you.</p>
+        </div>
+        <div class="feature-card">
+            <span class="feature-icon">🎁</span>
+            <h5>Best Prices & Offers</h5>
+            <p>Cheaper prices than your local supermarket, great cashback offers to top it off. Get best prices & offers.</p>
+        </div>
+        <div class="feature-card">
+            <span class="feature-icon">📦</span>
+            <h5>Wide Assortment</h5>
+            <p>Choose from 5000+ products across food, personal care, household, bakery, veg and non-veg & other categories.</p>
+        </div>
+        <div class="feature-card">
+            <span class="feature-icon">♻️</span>
+            <h5>Easy Returns</h5>
+            <p>Not satisfied with a product? Return it at the doorstep & get a refund within hours. No questions asked policy</p>
+        </div>
+    </div>
+
+
+    <footer class="freshcart-footer">
+
+        <div class="footer-content">
+            <div class="footer-column footer-categories">
+                <h3>Categories</h3>
+                <div class="categories-list">
+                    <ul>
+                        <li>Vegetables & Fruits</li>
+                        <li>Breakfast & instant food</li>
+                        <li>Bakery & Biscuits</li>
+                        <li>Atta, rice & dal</li>
+                        <li>Sauces & spreads</li>
+                        <li>Organic & gourmet</li>
+                        <li>Baby care</li>
+                        <li>Cleaning essentials</li>
+                        <li>Personal care</li>
+                    </ul>
+                    <ul>
+                        <li>Dairy, bread & eggs</li>
+                        <li>Cold drinks & juices</li>
+                        <li>Tea, coffee & drinks</li>
+                        <li>Masala, oil & more</li>
+                        <li>Chicken, meat & fish</li>
+                        <li>Paan corner</li>
+                        <li>Pharma & wellness</li>
+                        <li>Home & office</li>
+                        <li>Pet care</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-column">
+                <h3>Get to know us</h3>
+                <ul>
+                    <li>Company</li>
+                    <li>About</li>
+                    <li>Blog</li>
+                    <li>Help Center</li>
+                    <li>Our Value</li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>For Consumers</h3>
+                <ul>
+                    <li>Payments</li>
+                    <li>Shipping</li>
+                    <li>Product Returns</li>
+                    <li>FAQ</li>
+                    <li>Shop Checkout</li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Become a Shopper</h3>
+                <ul>
+                    <li>Shopper Opportunities</li>
+                    <li>Become a Shopper</li>
+                    <li>Earnings</li>
+                    <li>Ideas & Guides</li>
+                    <li>New Retailers</li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Freshcart programs</h3>
+                <ul>
+                    <li>Freshcart programs</li>
+                    <li>Gift Cards</li>
+                    <li>Promos & Coupons</li>
+                    <li>Freshcart Ads</li>
+                    <li>Careers</li>
+                </ul>
+            </div>
+        </div>
+        </footer>
+
+
+      
+
+        
+    
+</body>
+
+</html>
