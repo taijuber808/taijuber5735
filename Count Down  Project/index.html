@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #141e30, #5081b8);
+        }
+
+        .box {
+            height: 350px;
+            width: auto;
+            background: rgba(255, 255, 255, 0.08);
+
+            border-radius: 25px;
+            border: 5px solid darkcyan;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+
+            color: #499e8f;
+            font-size: 42px;
+            font-weight: bold;
+
+            transition: 0.4s;
+        }
+
+        .box:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 40px #00ffd5;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="box" id="datetime"></div>
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
