@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Shark Tank India CRUD</title>
+
+<style>
+
+body{
+font-family: Arial;
+background:#f2f2f2;
+margin:0;
+}
+
+h1{
+text-align:center;
+background:#111;
+color:white;
+padding:15px;
+}
+
+.container{
+display:flex;
+gap:20px;
+padding:20px;
+}
+
+.sidebar{
+width:320px;
+background:white;
+padding:20px;
+border-radius:10px;
+}
+
+input,select{
+width:100%;
+padding:8px;
+margin:5px 0;
+}
+
+button{
+width:100%;
+padding:10px;
+margin:5px 0;
+background:#33c3f0;
+border:none;
+color:white;
+cursor:pointer;
+}
+
+.cards{
+flex:1;
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
+}
+
+.card{
+background:white;
+padding:15px;
+border-radius:10px;
+text-align:center;
+box-shadow:0 2px 5px rgba(0,0,0,0.2);
+}
+
+.card img{
+width:100px;
+}
+
+</style>
+</head>
+
+<body>
+
+<h1>Shark Tank India</h1>
+
+<div class="container">
+
+<div class="sidebar">
+
+<h3>Add Pitch</h3>
+
+<input id="pitch-title" placeholder="Title">
+<input id="pitch-image" placeholder="Image URL">
+<input id="pitch-category" placeholder="Category">
+<input id="pitch-founder" placeholder="Founder">
+<input id="pitch-price" type="number" placeholder="Price">
+
+<button id="add-pitch">Add Pitch</button>
+
+<hr>
+
+<h3>Update Pitch</h3>
+
+<input id="update-pitch-id" placeholder="ID">
+<input id="update-pitch-title" placeholder="Title">
+<input id="update-pitch-image" placeholder="Image">
+<input id="update-pitch-category" placeholder="Category">
+<input id="update-pitch-founder" placeholder="Founder">
+<input id="update-pitch-price" placeholder="Price">
+
+<button id="update-pitch">Update Pitch</button>
+
+<hr>
+
+<h3>Update Price</h3>
+
+<input id="update-price-pitch-id" placeholder="ID">
+<input id="update-price-pitch-price" placeholder="Price">
+
+<button id="update-price-pitch">Update Price</button>
+
+<hr>
+
+<h3>Sort</h3>
+
+<button id="sort-low">Sort Low to High</button>
+<button id="sort-high">Sort High to Low</button>
+
+<hr>
+
+<h3>Filter</h3>
+
+<button id="filter-Food">Food</button>
+<button id="filter-Electronics">Electronics</button>
+<button id="filter-Personal">Personal Care</button>
+
+<hr>
+
+<h3>Search</h3>
+
+<select id="search-by-select">
+<option value="">Search By</option>
+<option value="title">Title</option>
+<option value="founder">Founder</option>
+</select>
+
+<input id="search-by-input" placeholder="Enter search text">
+
+<button id="search-btn">Search</button>
+
+</div>
+
+<div class="cards" id="data-list-wrapper"></div>
+
+</div>
+
+<script src="./script.js"></script>
+</body>
+</html>
